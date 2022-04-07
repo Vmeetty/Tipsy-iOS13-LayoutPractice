@@ -11,8 +11,6 @@ import UIKit
 
 struct Brain {
     
-    var tipcy = TipsyModel()
-    
     var decimal: Float = 0.0
     var splitValue : Float = 2
     var result: Float = 0.0
