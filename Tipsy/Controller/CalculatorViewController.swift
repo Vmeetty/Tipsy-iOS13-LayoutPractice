@@ -24,19 +24,10 @@ class CalculatorViewController: UIViewController {
 
     @IBAction func tipChanged(_ sender: UIButton) {
         updateUI()
+        tenPctButton.isSelected = false
+        twentyPctButton.isSelected = false
+        zeroPctButton.isSelected = false
         sender.isSelected = true
-        switch sender {
-        case zeroPctButton:
-            tenPctButton.isSelected = false
-            twentyPctButton.isSelected = false
-        case tenPctButton:
-            zeroPctButton.isSelected = false
-            twentyPctButton.isSelected = false
-        case twentyPctButton:
-            zeroPctButton.isSelected = false
-            tenPctButton.isSelected = false
-        default : break
-        }
         brain.getDecimalOf(button: sender)
         brain.getTimValueBy(sender.currentTitle)
         

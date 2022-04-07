@@ -9,11 +9,7 @@
 import Foundation
 
 struct TipsyModel {
-    
-//    var bill = ""
-//    var splitValue: Float = 2
-//    var tip = ""
-    
+        
     var totalBill = ""
     var settingStr = ""
 }
